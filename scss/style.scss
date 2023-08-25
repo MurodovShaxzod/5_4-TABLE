@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+
+  .header-icon i {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+i {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.bxs-checkbox-minus,
+.bxs-check-square {
+  color: rgb(30, 30, 255);
+}
+
+.check-div,
+.check-div-thead {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+
+  .form-select {
+    width: 100px;
+    margin: 20px auto 40px auto;
+  }
