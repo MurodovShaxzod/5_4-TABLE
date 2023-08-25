@@ -78,8 +78,14 @@ document.querySelector("header i").addEventListener("click", () => {
   });
 });
 
+let tbodyTr = Array.from(document.querySelectorAll("tbody tr"));
+tbodyTr.slice(0, 4).forEach(item => {
+  item.style.display = "table-row";
+});
+tbodyTr.slice(4).forEach(item => {
+  item.style.display = "none";
+});
 document.querySelector("select").addEventListener("click", (e) => {
-  let tbodyTr = Array.from(document.querySelectorAll("tbody tr"));
   if (e.target.value == "1") {
     tbodyTr.slice(0, 4).forEach(element => {
       element.style.display = "table-row";
@@ -87,14 +93,14 @@ document.querySelector("select").addEventListener("click", (e) => {
     tbodyTr.slice(4).forEach(element => {
       element.style.display = "none";
     });
-  } else   if (e.target.value == "2") {
+  } else if (e.target.value == "2") {
     tbodyTr.slice(0, 9).forEach(element => {
       element.style.display = "table-row";
     });
     tbodyTr.slice(9).forEach(element => {
       element.style.display = "none";
     });
-  } else  if (e.target.value == "3") {
+  } else if (e.target.value == "3") {
     tbodyTr.slice(0, 14).forEach(element => {
       element.style.display = "table-row";
     });
